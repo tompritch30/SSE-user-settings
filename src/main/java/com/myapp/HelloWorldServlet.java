@@ -1,8 +1,12 @@
 package com.myapp;
 
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.RequestDispatcher;
+import java.io.IOException;
 
 public class HelloWorldServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)

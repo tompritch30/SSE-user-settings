@@ -1,4 +1,4 @@
-FROM tomcat:9-jdk11-openjdk
+FROM tomcat:10-jdk11-openjdk
 
 COPY ./build/libs/myapp.war /usr/local/tomcat/webapps/
 

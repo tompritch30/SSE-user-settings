@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Servlet API dependency
+    providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
+    // For Gradle 3.4 or above, use 'compileOnly' instead of 'providedCompile'
+    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+}
+
+war {
+    archiveFileName = 'myapp.war'
+}
